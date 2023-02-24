@@ -13,6 +13,25 @@ import storage from 'redux-persist/lib/storage';
 import { contactsReducer } from './contactsSlice';
 import { filterReducer } from './filterSlice';
 
+//збереження в локал сторедж окремо
+// const persistConfig = {
+//   key: 'friends',
+//   version: 1,
+//   storage,
+// };
+
+// const filterPersistConfig = {
+//   key: 'filter',
+//   version: 1,
+//   storage,
+// };
+
+// constpersistedFriendReducer = persistReducer(persistConfig, friendReducer);
+// const filterPersistedReducer = persistReducer(
+//   filterPersistConfig,
+//   filterReducer
+// );
+
 //збереження в локал сторедж одним об'єктом
 const rootReducer = combineReducers({
   contacts: contactsReducer,
